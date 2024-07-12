@@ -1,0 +1,6 @@
+registrar(iocnameRegister)
+registrar(iocstringtestRegister)
+registrar(ioccountdbgrepRegister)
+registrar(mkdirRegister)
+registrar(dbLoadRecordsFuncsRegister)
+registrar(iocshCmdFuncsRegister)
