@@ -24,17 +24,10 @@
 # Variables and paths to dependent modules:
 #MODULES = /path/to/modules
 #MYMODULE = $(MODULES)/my-module
-
-# Dependant modules
-PCRE=/usr/local/include
 BOOST=$(SUPPORT)/boost
 
-# Specify PCRE install point for Linux Ubuntu 22.04:
-PCRE_INCLUDE=/usr/local/include/pcre
-PCRE_LIB=/usr/local/lib
-
 # EPICS_BASE should appear last so earlier modules can override stuff:
-EPICS_BASE = /usr/local/epics/base
+EPICS_BASE=/usr/local/epics/base
 
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:
