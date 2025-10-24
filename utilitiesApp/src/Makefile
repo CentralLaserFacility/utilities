@@ -7,14 +7,18 @@ include $(TOP)/configure/CONFIG
 
 #==================================================
 # build a support library
+USR_INCLUDES += -I$(BOOST)
+USR_LDFLAGS  += -L$(BOOST_LIB)
 
-USR_INCLUDES += -I"/usr/local/lib" -I"/usr/local/epics/support/boost"
-
+#library name
 LIBRARY_IOC += utilities
 
 # install icpconfig.dbd into <top>/dbd
 DBD += utilities.dbd
 INC += utilities.h
+
+#utils lib dependancy on boost
+utilities_SYS_LIBS += boost_regex
 
 # specify all source files to be compiled and added to the library
 utilities_SRCS += trimString.cpp mkdir.cpp iocshHelpers.cpp ioccalc.cpp iocdcalc.cpp iocstringtest.cpp
