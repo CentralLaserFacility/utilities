@@ -42,9 +42,6 @@
 #include "macLib.h"
 #include "errlog.h"
 
-// --- PCRE redacted ---
-// #include "pcrecpp.h"
-
 #include <string.h>
 
 // --- switch from <regex> to Boost.Regex ---
