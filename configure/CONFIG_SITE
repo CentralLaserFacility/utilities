@@ -20,6 +20,9 @@ CHECK_RELEASE = YES
 #  Must be either YES or NO.
 STATIC_BUILD=YES
 
+# Ensure we build both...
+SHARED_LIBRARIES=YES
+
 # Set this when you only want to compile this application
 #   for a subset of the cross-compiled target architectures
 #   that Base is built for.
