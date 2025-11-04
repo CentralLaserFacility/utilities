@@ -7,9 +7,10 @@ include $(TOP)/configure/CONFIG
 
 #==================================================
 # build a support library
+USR_INCLUDES += -I$(BOOST)
+USR_LDFLAGS  += -L$(BOOST_LIB)
 
-USR_INCLUDES += -I"/usr/local/lib" -I"/usr/local/epics/support/boost"
-
+#library name
 LIBRARY_IOC += utilities
 
 # install icpconfig.dbd into <top>/dbd
