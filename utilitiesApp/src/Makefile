@@ -17,9 +17,6 @@ LIBRARY_IOC += utilities
 DBD += utilities.dbd
 INC += utilities.h
 
-#utils lib dependancy on boost
-utilities_SYS_LIBS += boost_regex
-
 # specify all source files to be compiled and added to the library
 utilities_SRCS += trimString.cpp mkdir.cpp iocshHelpers.cpp ioccalc.cpp iocdcalc.cpp iocstringtest.cpp
 utilities_SRCS += dbLoadRecordsFuncs.cpp iocshCmdFuncs.cpp iocname.cpp
