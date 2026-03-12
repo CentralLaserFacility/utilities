@@ -1,0 +1,15 @@
+name: Release utilities support module on PR merged into main
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  release-ioc:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+    uses: CentralLaserFacility/CLF-github-actions/.github/workflows/release-on-github-workflow.yml@main
+    with:
+      runner: ubuntu-latest
+      custom_version: ${{ github.event.pull_request.title }}
