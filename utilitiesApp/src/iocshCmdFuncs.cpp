@@ -18,7 +18,6 @@
 #include <sstream>
 #include <fstream>
 #ifndef _WIN32
-#include <ncurses.h>
 #include <unistd.h>
 #endif
 

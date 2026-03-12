@@ -15,9 +15,6 @@
 #include <fstream>
 #include <vector>
 #include <memory>
-#ifndef _WIN32
-#include <ncurses.h>
-#endif
 
 #include "epicsStdlib.h"
 #include "epicsString.h"
