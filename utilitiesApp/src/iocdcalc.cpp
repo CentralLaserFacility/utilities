@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <ncurses.h>
 #include <errno.h>
 #include <math.h>
 #include <exception>

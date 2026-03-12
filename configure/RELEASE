@@ -22,11 +22,10 @@
 # the CONFIG_SITE file.
 
 # Variables and paths to dependent modules:
-SUPPORT=/usr/local/epics/support
-EPICS_BASE=/usr/local/epics/base
-#BOOST=$(EPICS_BASE)/libraries/master/boost
-BOOST=/usr/include/boost/
-BOOST_LIBS=/usr/include/boost/
+#MODULES = /path/to/modules
+#MYMODULE = $(MODULES)/my-module
+
+# EPICS_BASE should appear last so earlier modules can override stuff:
 
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:
