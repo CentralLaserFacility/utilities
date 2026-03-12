@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+# epics
+O.*/
+/db
+/bin
+/dbd
+/include
+/lib
+/templates
+/doc
+envPaths
+cdCommands
+dllPath*.bat
+
+# vs
+.vs*
