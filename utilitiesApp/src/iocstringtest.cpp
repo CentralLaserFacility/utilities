@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <ncurses.h>
 #include <errno.h>
 #include <math.h>
 #include <exception>
@@ -20,6 +19,9 @@
 #include <fstream>
 #include <vector>
 #include <memory>
+#ifndef _WIN32
+#include <ncurses.h>
+#endif
 
 #include "epicsStdlib.h"
 #include "epicsString.h"

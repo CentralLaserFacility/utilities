@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <ncurses.h>
 #include <errno.h>
 #include <math.h>
 #include <exception>
@@ -19,6 +18,7 @@
 #include <sstream>
 #include <fstream>
 #ifndef _WIN32
+#include <ncurses.h>
 #include <unistd.h>
 #endif
 

@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <ncurses.h>
 #include <errno.h>
 #include <math.h>
 #include <exception>
@@ -14,6 +13,9 @@
 #include <time.h>
 #include <sstream>
 #include <fstream>
+#ifndef _WIN32
+#include <ncurses.h>
+#endif
 
 #include "epicsStdlib.h"
 #include "epicsString.h"
