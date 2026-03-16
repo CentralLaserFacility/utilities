@@ -1,0 +1,32 @@
+name: Bug Report (RCA)
+description: RCA template for recurring or high-impact bugs
+type: "Bug"
+labels: ["RCA"]
+body:
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: "Problem Description (D2)"
+      description: "What do we think it is? What do we know? Which processes are involved?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: containment
+    attributes:
+      label: "Interim Containment (D3)"
+      description: "What can we do to contain the problem?"
+
+  - type: textarea
+    id: root-cause
+    attributes:
+      label: "Root Cause (D4)"
+      description: "What caused this? Are there deeper underlying causes?"
+      value: "Add before closing"
+
+  - type: textarea
+    id: prevent-recurrence
+    attributes:
+      label: "Prevention (D7)"
+      description: "What changes prevent this from happening again?"
+      value: "Add before closing"
