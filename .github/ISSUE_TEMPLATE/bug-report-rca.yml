@@ -30,3 +30,18 @@ body:
       label: "Prevention (D7)"
       description: "What changes prevent this from happening again?"
       value: "Add before closing"
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 8D Process
+        **D0: Emergency Response** - EPAC support, Teams channels: R201, R202, R204
+        **D1: Use a team approach** - Seek & offer team support
+        **D2: Describe the problem** - Problem Description field (above)
+        **D3: Interim Containment Plan** - Interim Containment field (above)
+        **D4: Define and verify root cause** - Root Cause field (above)
+        **D5: Select permanent corrective action** - Testing, PR, review
+        **D6: Implement permanent corrective action** - Request changes, merge, deploy
+        **D7: Prevent recurrence** - Prevention field (above)
+        **D8: Recognise the team** - Share updates & learnings (retrospectives, planning, demos)
